@@ -1,0 +1,173 @@
+$azulpuro:#4e73df;
+$pasado:#0a58ca;
+
+.text-color{
+  color: azulpuro;
+}
+.separation{
+  margin: 30px;
+}
+.strikethrough {
+    text-decoration: line-through;
+}
+.align-text{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.mb-4 {
+    margin-bottom: 1.2rem !important;
+  }
+  h3, .h3 {
+    font-size: calc(1.3rem + 0.6vw);
+  }
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+.shadow {
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15) !important;
+  }
+.py-3 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+.card-header {
+    padding: .5rem 1rem;
+    margin-bottom: 0;
+    background-color: #f8f9fc;
+    border-bottom: 1px solid #e3e6f0;
+  }
+//------------------------------------------------input
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(13,110,253,.25);
+  }  
+input, button, select, optgroup, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  } 
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+  }
+.btn:hover {
+    color: #212529;
+  }
+.btn-primary {
+   // color: white;
+    background-color: azulpuro;
+    border-color: #0a53be;
+
+  }
+.btn-secundary {
+    color: #fff;
+    border-color: #0d6efd;
+    background-color: transparent;
+  }
+.btn-secundary:hover {
+    color: #fff;
+    border-color: #0a58ca;
+  }
+%busqueda {
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    //color: #212529;
+    border-radius: .25rem;
+    text-decoration: none;
+  }
+  
+.form-control {
+    @extend %busqueda;
+    width: 88%;
+    background-color: #fff;
+    background-clip: padding-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #ced4da; 
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+.btn {
+    @extend %busqueda; 
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
+   box-shadow: 0 0 0 .25rem rgba(49,132,253,.5);
+}
+.btn-check:checked + .btn-secundary:focus, .btn-check:active + .btn-secundary:focus, .btn-secundary:active:focus, .btn-secundary.active:focus, .show > .btn-secundary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .25rem rgba(49,132,253,.5);
+}
+//-----------------------------------------------------------------------------------------------------      
+.card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+  }
+.table > :not(caption) > * > * {
+    padding: .5rem .5rem;
+    background-color: var(--bs-table-bg);
+    border-bottom-width: 1px;
+    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+  }
+thead, tbody, tfoot, tr, td, th {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+  }
+.table {
+    --bs-table-bg: transparent;
+    --bs-table-accent-bg: transparent;
+    --bs-table-striped-color: #858796;
+    --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+    --bs-table-active-color: #858796;
+    --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+    --bs-table-hover-color: #858796;
+    --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #858796;
+    vertical-align: top;
+    border-color: #e3e6f0;
+  }
+.me-2 {
+    margin-right: .5rem !important;
+    width:30;
+    height:30;
+  }
+//------------------------------------------------ FOOTER
+footer.sticky-footer .copyright {
+    line-height: 1;
+    font-size: .8rem;
+  }
+.text-center {
+    text-align: center !important;
+  }
+.container, .container-fluid {
+    width: 100%;
+    padding-right: 0.75rem;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: 0.75rem;
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+  }
+footer.sticky-footer {
+    padding: 2rem 0;
+    flex-shrink: 0;
+}

@@ -1,0 +1,53 @@
+<section>
+    <article>
+                <div>
+                    <div>   
+                        <div class="container-fluid">
+                            <div class="card shadow">
+                                <div class="card-header py-3">
+                                    <p class="align-text text-color">Lista de tareas de Guillermo Tomas Cesario Provenzano</p>
+                                </div>
+                                <div class="card-body">
+                                    <div>
+                                        <div class="separation">
+                                            <input #tarea type="text" class="form-control item inputTask"  placeholder="Escribe una tarea"/> <button (click)="agregarTarea(tarea.value)" class="btn btn-primary" type="button" ><strong>ADD</strong></button> 
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <table class="table" id="table">
+                                            <thead>
+                                                <tr>
+                                                    <td><strong>Completado</strong></td>
+                                                    <td><strong>Descripción</strong></td>
+                                                    <td><strong>Acción</strong></td>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="tCuerpo" id="tCuerpo">        
+                                        <tr *ngFor="let t of tareas">
+                                          <td><input type="checkbox"></td>
+                                          <td #task>{{t.nombre}}</td>
+                                          <td><button (click)="eliminarTarea(t)" class="btn btn-secundary" id="deleteTask"><img class="rounded-circle me-2"  src="https://1.bp.blogspot.com/--0Bwbr91mg4/U8fham7UNpI/AAAAAAAABvw/UaWaCLhDFes/s1600/Delete_Icon.png"></button><button (click)="editarTarea(t,tarea.value)" class="btn btn-secundary" id="deleteTask"><img class="rounded-circle me-2"  src="https://contraloriadelmagdalena.gov.co/contratacion/imagenes/botones/editar.png"></button></td>                             
+                                        </tr>
+                                      </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <td><strong>Completado</strong></td>
+                                                    <td><strong>Descripción</strong></td>
+                                                    <td><strong>Acción</strong></td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="sticky-footer">
+                        <div class="container">
+                            <div class="text-center copyright"><span><strong>Lamansys © 2022</strong></span></div>
+                        </div>
+                    </footer>
+                </div>
+                
+    </article>
+</section>

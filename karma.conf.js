@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/curso-front-end-lamansys'),
+      dir: require('path').join(__dirname, './coverage/proyecto1'),
       subdir: '.',
       reporters: [
         { type: 'html' },

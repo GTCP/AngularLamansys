@@ -1,18 +1,26 @@
+import { TaskModule } from './task/task.module';
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 
+import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { GuilleComponentComponent } from './guille-component/guille-component.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GuilleComponentComponent
+    
+    NavbarComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+   
+  ],
+  exports: [
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

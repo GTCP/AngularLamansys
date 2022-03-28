@@ -1,10 +1,10 @@
-const express = require('express');
-const path  = require('path');
+const  express  =  require ( 'express' ) ;
+const  ruta   =  require ( 'ruta' ) ;
 
-const app = express();
+const  app  =  express ( ) ;
 
-app.use(express.static('./dist/proyecto1'));
+aplicación _ uso ( express . static ( './dist/proyecto1' ) ) ;
 
-app.get('/*',(req,res) => res.sendFile('index.html', {root: 'dist/proyecto1-heroku/'}),
+aplicación _ get ( '/*' , ( req , res )  =>  res . sendFile ( 'index.html' ,  { root : 'dist/proyecto1-heroku/' } ) ,
 );
-app.listen(process.env.PORT || 8080 );
+aplicación _ escucha ( proceso . entorno . PUERTO  ||  8080  ) ;
